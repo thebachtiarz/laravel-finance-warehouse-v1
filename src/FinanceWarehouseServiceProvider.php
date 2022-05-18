@@ -5,7 +5,7 @@ namespace TheBachtiarz\FinanceWarehouse;
 use Illuminate\Support\ServiceProvider;
 use TheBachtiarz\FinanceWarehouse\Interfaces\FinanceWarehouseSystemInterface;
 
-class FinanceServiceProvider extends ServiceProvider
+class FinanceWarehouseServiceProvider extends ServiceProvider
 {
     /**
      * register module finance warehouse
