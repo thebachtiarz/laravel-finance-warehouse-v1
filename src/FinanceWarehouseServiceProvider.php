@@ -14,11 +14,17 @@ class FinanceWarehouseServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        // 
+        $applicationFinanceWarehouseService = new ApplicationFinanceWarehouseService;
+
+        $applicationFinanceWarehouseService->registerConfig();
+
+        if ($this->app->runningInConsole()) {
+            $this->commands($applicationFinanceWarehouseService->registerCommands());
+        }
     }
 
     /**
-     * boot module finance
+     * boot module finance warehouse
      *
      * @return void
      */

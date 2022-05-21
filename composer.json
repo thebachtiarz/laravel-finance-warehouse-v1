@@ -3,6 +3,7 @@
     "description": "A Finance Warehouse Library for Laravel Project",
     "type": "library",
     "license": "MIT",
+    "version": "1.0.0",
     "keywords": [
         "laravel",
         "thebachtiarz",
